@@ -13,7 +13,7 @@ def get_db_connection():
             host='127.0.0.1',
             port=3306,
             user='root',
-            password='kyee',
+            password='root',
             db='usersdb',
             charset='utf8mb4',
             cursorclass=pymysql.cursors.DictCursor
