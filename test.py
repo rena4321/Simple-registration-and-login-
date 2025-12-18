@@ -6,7 +6,7 @@ def register():
     user = input("Please enter user name: ")
     password = input("Please enter password: ")
 
-    conn = pymysql.connect(host='127.0.0.1', port=3306, user='root',password='kyee', db="usersdb")
+    conn = pymysql.connect(host='127.0.0.1', port=3306, user='root',password='root', db="usersdb")
     cursor = conn.cursor()
 
     sql = 'insert into users(name, password) values("{}", "{}")'.format(user, password)
